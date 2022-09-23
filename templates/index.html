@@ -3,7 +3,7 @@
 
 {% block body %}
     <!-- Start of body content specific to page -->
-    <div class="px-50 py-50 mx-auto">
+    <div class="px-5 py-5 mx-auto">
         <h1 class="text-white"><strong>Welcome to Ava's Flask Project</strong></h1>
         <div class="row">
             <div class="col-4">
@@ -54,19 +54,20 @@
             </div>
         </div>
      </div>   
-        <div class="col-5">
-             <div class="card">     
-                <img class="card-img-top" src="{{ url_for('static', filename='assets/kraftmacandcheese.jpg') }}" alt="Kraft Mac and Cheese" height="500">
-                <div class="card-body">
-                <h5 class="card-title"><center>Ava's Favortie Foods</center></h5>
-                <p class="card-text">
+        <div class="row">
+            <div class="col-5">
+                <div class="card">     
+                    <img class="card-img-top" src="{{ url_for('static', filename='assets/kraftmacandcheese.jpg') }}" alt="Kraft Mac and Cheese" height="500">
+                    <div class="card-body">
+                    <h5 class="card-title"><center>Ava's Favortie Foods</center></h5>
+                    <p class="card-text">
                         Ava Carlson loves Kraft mac and cheese <i>NOT</i> Annie's mac and cheese. 
                         If you want to get yourself some Kraft mac and cheese, click the link below! </p>
                         <a href="https://www.amazon.com/Kraft-Macaroni-Cheese-Dinner-Original/dp/B011W21U0I" class="btn btn-primary">Link to get Kraft mac and cheese</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
- 
            
 {% endblock %}
