@@ -11,29 +11,59 @@
         <h1 class="text-primary"><strong>About Me</strong></h1>
         <p class="text-secondary">Ava Carlson</p>
     </div>
-  <!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Inspiring Quote</button>
 
-<!-- Modal -->
-    <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-
-    <!-- Modal content-->
-            <div class="modal-content">
-                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                         <h4 class="modal-title">Inspiring Quote</h4>
-                    </div>
-                <div class="modal-body">
-                     <p>"I can do all this through him who gives me strength." -Philipians 4:13</p>
-                </div>
-                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                         </div>
-                    </div>
-
-                 </div>
-            </div>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <title>Images of My Life</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+    
+    <div class="container">
+      <h2>Images of My Life</h2>  
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+    
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="friends.png" alt="Ava Friends" style="width:100%;">
+          </div>
+    
+          <div class="item">
+            <img src="family.jpg" alt="Ava Fam" style="width:100%;">
+          </div>
+        
+          <div class="item">
+            <img src="eli.jpg" alt="Ava Boyfriend" style="width:100%;">
+          </div>
+        </div>
+    
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    
+    </body>
+    </html>
+    
 {% endblock %}
 
 <!- This is turning off birds background from base.html -->
