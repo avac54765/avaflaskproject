@@ -13,4 +13,4 @@ volumes:
     driver_opts:
       o: bind
       type: none
-      device: /avaflaskproject/volumes
+      device: /home/ubuntu/avaflaskproject/volumes
